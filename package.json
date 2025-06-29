@@ -1,0 +1,41 @@
+{
+  "name": "epictech-website",
+  "version": "1.0.0",
+  "description": "A modern, responsive website for EpicTechAI - showcasing AI-powered solutions and business automation services.",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve . --listen 3000",
+    "build": "echo 'No build process needed for static HTML'",
+    "test": "echo 'No tests specified'",
+    "deploy": "echo 'Deploy to your preferred hosting service'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/epictech-website.git"
+  },
+  "keywords": [
+    "ai",
+    "artificial-intelligence",
+    "automation",
+    "business-solutions",
+    "epictech",
+    "website",
+    "responsive",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "EpicTechAI <epictechai@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/epictech-website/issues"
+  },
+  "homepage": "https://epictech.ai",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" data-capo="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EpicTechAI - AI-Powered Solutions</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900%7COpen%20Sans:100,200,300,400,500,600,700,800,900%7CMontserrat:100,200,300,400,500,600,700,800,900%7CSora:100,200,300,400,500,600,700,800,900%7CInter%20Tight:100,200,300,400,500,600,700,800,900%7CInter:100,200,300,400,500,600,700,800,900%7CRoboto:100,200,300,400,500,600,700,800,900&display=swap">
+    
+    <style type="text/css">
+        :root {
+            --primary: #37ca37;
+            --secondary: #188bf6;
+            --white: #ffffff;
+            --gray: #cbd5e0;
+            --black: #000000;
+            --red: #e93d3d;
+            --orange: #f6ad55;
+            --yellow: #faf089;
+            --green: #9ae6b4;
+            --teal: #81e6d9;
+            --malibu: #63b3ed;
+            --indigo: #757BBD;
+            --purple: #d6bcfa;
+            --pink: #fbb6ce;
+            --transparent: transparent;
+            --overlay: rgba(0, 0, 0, 0.5);
+            --color-m7es2kbj: #030327;
+            --color-m7es35wf: #070754;
+            --color-m7es3t2n: #0B0B83;
+            --color-m7es4a67: #0f0fb2;
+            --color-m7es4r07: #1313e1;
+            --color-m7fm8ogz: #F7F5F3;
+            --color-m7fm9es5: #E2DCD5;
+            --color-lujcehqf: #8750f7;
+            --color-lujcfpz4: #8750f7;
+            --headlinefont: 'Roboto';
+            --contentfont: 'Lato';
+            --text-color: #000000;
+            --link-color: var(--color-m7es4r07);
+        }
+
+        body {
+            font-family: var(--contentfont);
+            margin: 0;
+            padding: 0;
+            background-color: var(--black);
+            color: var(--white);
+            overflow-x: hidden;
+        }
+
+        .hero-section {
+            padding: 60px 20px 150px;
+            background-color: var(--black);
+            text-align: center;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-content {
+            max-width: 1170px;
+            margin: 0 auto;
+        }
+
+        .hero-title {
+            font-family: var(--headlinefont);
+            font-size: 72px;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 16px;
+            color: var(--gray);
+            margin-bottom: 20px;
+        }
+
+        .hero-description {
+            font-size: 16px;
+            color: var(--gray);
+            line-height: 1.7;
+            margin-bottom: 60px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: transparent;
+            color: var(--white);
+            border: 1px solid var(--white);
+            text-decoration: none;
+            font-family: var(--headlinefont);
+            font-weight: 700;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        .cta-button:hover {
+            background-color: var(--white);
+            color: var(--black);
+        }
+
+        .cta-button.primary {
+            background-color: var(--color-lujcfpz4);
+            border-color: var(--color-lujcfpz4);
+        }
+
+        .cta-button.primary:hover {
+            background-color: var(--white);
+            color: var(--color-lujcfpz4);
+        }
+
+        .services-section {
+            padding: 60px 20px;
+            background-color: var(--color-m7es2kbj);
+        }
+
+        .services-container {
+            max-width: 1170px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-family: var(--headlinefont);
+            font-size: 42px;
+            color: var(--gray);
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 80px;
+        }
+
+        .service-card {
+            background-color: rgba(13, 7, 27, 0.5);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid transparent;
+            transition: 0.4s;
+            box-shadow: 0px 0px 85px 0px rgba(241, 24, 24, 0.33);
+        }
+
+        .service-card:hover {
+            border: 1px solid white;
+            box-shadow: 0px 0px 45px 0px rgba(241, 24, 24, 0.85);
+        }
+
+        .service-title {
+            font-family: var(--headlinefont);
+            font-size: 24px;
+            color: var(--gray);
+            margin-bottom: 20px;
+        }
+
+        .service-description {
+            color: var(--gray);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        .contact-section {
+            padding: 80px 20px;
+            background-color: var(--color-m7es2kbj);
+            text-align: center;
+        }
+
+        .contact-info {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-item {
+            margin-bottom: 30px;
+        }
+
+        .contact-label {
+            font-family: var(--headlinefont);
+            font-size: 18px;
+            color: var(--white);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .contact-value {
+            font-size: 16px;
+            color: var(--gray);
+        }
+
+        .contact-value a {
+            color: var(--color-lujcfpz4);
+            text-decoration: none;
+        }
+
+        .contact-value a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            padding: 40px 20px;
+            background-color: var(--black);
+            text-align: center;
+            border-top: 3px solid var(--white);
+        }
+
+        .footer-content {
+            max-width: 1170px;
+            margin: 0 auto;
+        }
+
+        .footer-text {
+            color: var(--gray);
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            margin-top: 30px;
+        }
+
+        .social-links a {
+            color: var(--color-lujcfpz4);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        @media screen and (max-width: 768px) {
+            .hero-title {
+                font-size: 42px;
+            }
+            
+            .section-title {
+                font-size: 28px;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-button {
+                display: block;
+                margin: 10px auto;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <p class="hero-subtitle">Welcome to EpicTechAI</p>
+            <h1 class="hero-title">Ready For An <strong>EPIC</strong> TECH Breakthrough?</h1>
+            <p class="hero-description">
+                Transform your business with cutting-edge AI solutions. We specialize in creating custom AI-powered systems, 
+                automation tools, and innovative technology solutions that drive real results for your business.
+            </p>
+            <div class="hero-actions">
+                <a href="https://epictech.ai" class="cta-button primary">Visit Our Website</a>
+                <a href="https://www.youtube.com/@EpicTech-AI" class="cta-button" target="_blank">Watch Our Videos</a>
+                <a href="https://buy.stripe.com/7sI3dlgcQ4uL0gMeUW" class="cta-button">Custom Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="services-container">
+            <h2 class="section-title">Our AI-Powered Solutions</h2>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3 class="service-title">AI Assistant Development</h3>
+                    <p class="service-description">
+                        Custom AI assistants that can handle your contacts, email, calendar, to-do lists, and much more. 
+                        Eliminate hours of unproductive work with your own AI agent system.
+                    </p>
+                </div>
+                
+                <div class="service-card">
+                    <h3 class="service-title">Business Automation</h3>
+                    <p class="service-description">
+                        Streamline your business processes with intelligent automation solutions. From customer service 
+                        to data processing, we create systems that work 24/7 for your business.
+                    </p>
+                </div>
+                
+                <div class="service-card">
+                    <h3 class="service-title">Custom AI Solutions</h3>
+                    <p class="service-description">
+                        Tailored AI applications designed specifically for your industry and business needs. 
+                        We build scalable, efficient solutions that grow with your business.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-info">
+            <h2 class="section-title">Get In Touch</h2>
+            
+            <div class="contact-item">
+                <div class="contact-label">Email</div>
+                <div class="contact-value">
+                    <a href="mailto:epictechai@gmail.com">epictechai@gmail.com</a>
+                </div>
+            </div>
+            
+            <div class="contact-item">
+                <div class="contact-label">Website</div>
+                <div class="contact-value">
+                    <a href="https://epictech.ai" target="_blank">epictech.ai</a>
+                </div>
+            </div>
+            
+            <div class="contact-item">
+                <div class="contact-label">YouTube Channel</div>
+                <div class="contact-value">
+                    <a href="https://www.youtube.com/@EpicTech-AI" target="_blank">@EpicTech-AI</a>
+                </div>
+            </div>
+            
+            <div class="contact-item">
+                <div class="contact-label">Custom Work & Subscriptions</div>
+                <div class="contact-value">
+                    <a href="https://buy.stripe.com/7sI3dlgcQ4uL0gMeUW" target="_blank">Order Custom Solutions</a>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://epictech.ai" target="_blank">Website</a>
+                <a href="https://www.youtube.com/@EpicTech-AI" target="_blank">YouTube</a>
+                <a href="mailto:epictechai@gmail.com">Email</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">
+                © 2025 All rights reserved | <strong>EPIC TECH AI</strong> | 
+                <a href="#" style="color: var(--color-lujcfpz4);">Privacy Policy</a>
+            </p>
+            <p class="footer-text">
+                Transforming businesses with AI-powered solutions and automation.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
